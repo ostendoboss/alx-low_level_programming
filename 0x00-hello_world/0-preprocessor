@@ -1,2 +1,2 @@
 #!/bin/bash\n
-$CFILE -o c
+echo $CFILE -o c
