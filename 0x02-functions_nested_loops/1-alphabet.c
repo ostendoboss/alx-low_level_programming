@@ -3,7 +3,7 @@
  *print_alphabet - fuction to print abc
  *
  *Return: 0
-*/
+ */
 void print_alphabet(void)
 {
 char c;
