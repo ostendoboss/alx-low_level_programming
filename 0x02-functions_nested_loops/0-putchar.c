@@ -1,4 +1,4 @@
-#incude "main.h"
+#include "main.h"
 /**
  *main -print putchar
  *Return: alaways 0
