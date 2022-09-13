@@ -8,7 +8,7 @@ int _isalpha(int c)
 {
 if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= '2'))
 {
-return(1);
+return (1);
 }
 else
 return (0);
