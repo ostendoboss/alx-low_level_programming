@@ -1,8 +1,7 @@
 #incude "main.h"
-
 /**
- * main -print putchar
- * Return: alaways 0
+ *main -print putchar
+ *Return: alaways 0
 */
 int main(void)
 {
