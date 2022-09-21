@@ -1,28 +1,23 @@
-nclude "main.h"
+#include "main.h"
 
 /**
- *leet -  encodes a string into 1337.
- *@Night: string i used
- *Return: Night
+ *leet - encode string into 1337 leet
+ *@s: string to manipulate
+ *Return: string
 */
 
-char *leet(char *Night)
+char *leet(char *s)
 {
-int count = 0, i;
-int lower_case[] = {97, 101, 111, 116, 108};
-int upper_case[] = {65, 69, 79, 84, 76};
-int numbers[] = {52, 51, 48, 55, 49};
-while (*(Night + count) != '\0')
+int a[11] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
+int b[11] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
+int i, j;
+for (j = 0; s[j] != '\0'; j++)
 {
-for (i = 0; i < 5; i++)
+for (i = 0; a[i] != '\0'; i++)
 {
-if (*(Night + count) == lower_case[i] || *(Night + count) == upper_case[i])
-{
-*(Night + count) = numbers[i];
-break;
+if (s[j] == a[i])
+s[j] = b[i];
 }
 }
-count++;
-}
-return (Night);
+return (s);
 }
