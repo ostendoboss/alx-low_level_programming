@@ -13,3 +13,7 @@
 6 - Inception. Is it possible? mandatory Write a function that returns 1 if a number is a prime number, 0 otherwise. Prototype: int is_prime_number(int n);
 
 7 - They say we only use a fraction of our brain's true potential. Now that's when we're awake. When we're asleep, we can do almost anything mandatory Write a function that returns 1 if a string is a palindrome and 0
+
+8 - Write a function that compares two strings and returns 1 if the strings can be considered identical, otherwise return 0
+
+
