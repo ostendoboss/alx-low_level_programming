@@ -1,31 +1,30 @@
+#include <stdlib.h>
+#include <stdio.h>
 #include "main.h"
 
 /**
- *_strdup - returns a pointer to a newly allocated
- *space in memory, which contains a copy of the
- *string given as a parameter.
- *@str:String to be copied
- *
- *Return: Null in case of error, pointer to allocated
- *space
+ *create_array - create array of chars and initialize with a specific char
+ *@size: size of array
+ *@c: fill array values with this char
+ *Return: pointer to array
 */
 
-char *_strdup(char *str)
+char *create_array(unsigned int size, char c)
 {
-char *cpy;
-int index, len;
-if (str == NULL)
+char *arr;
+int i = 0;
+if (size <= 0) /* validate size input */
 return (NULL);
-for (index = 0; str[index]; index++)
-len++;
-cpy = malloc(sizeof(char) * (len + 1));
-if (cpy == NULL)
+arr = malloc(sizeof(char) * size); /* allocate memory */
+if (arr == NULL) /* validate memory */
 return (NULL);
-for (index = 0; str[index]; index++)
+while (i < (int)size) /* set array values to char c */
 {
-cpy[index] = str[index];
+*(arr + i) = c;
+i++;
 }
-cpy[len] = '\0';
-return (cpy);
+*(arr + i) = '\0';
+return (arr);
 }
+
 
