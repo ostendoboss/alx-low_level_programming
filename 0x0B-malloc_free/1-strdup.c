@@ -3,28 +3,30 @@
 #include "main.h"
 
 /**
- *create_array - create array of chars and initialize with a specific char
- *@size: size of array
- *@c: fill array values with this char
- *Return: pointer to array
+ *_strdup - returns a pointer to a newly allocated space in memory,
+ *which contains a copy of the string given as a parameter
+ *@str: string to duplicate
+ *Return: pointer to duplicated string in allocated memory
 */
 
-char *create_array(unsigned int size, char c)
+char *_strdup(char *str)
 {
-char *arr;
-int i = 0;
-if (size <= 0) /* validate size input */
+char *duplicate_str;
+int i = 0, len = 0;
+if (str == NULL) /* validate str input */
 return (NULL);
-arr = malloc(sizeof(char) * size); /* allocate memory */
-if (arr == NULL) /* validate memory */
+while (*(str + i))
+len++, i++;
+len++; /* add null terminator to length */
+duplicate_str = malloc(sizeof(char) * len); /* allocate memory */
+if (duplicate_str == NULL) /* validate memory */
 return (NULL);
-while (i < (int)size) /* set array values to char c */
+i = 0;
+while (i < len)
 {
-*(arr + i) = c;
+*(duplicate_str + i) = *(str + i);
 i++;
 }
-*(arr + i) = '\0';
-return (arr);
+return (duplicate_str);
 }
-
 
