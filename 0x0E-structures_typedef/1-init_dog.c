@@ -5,7 +5,7 @@
   *@d: pointer to the structure.
   *@name: member
   *@age: member
-  *@owner: member  
+  *@owner: member
   *Return: void.
  */
 
