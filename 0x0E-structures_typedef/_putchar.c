@@ -5,7 +5,7 @@
  *@c: The character to print
  *
  *Return: on success 1.
- *On error, 1 is returned, errno is set appropriately.
+ *On error, -1 is returned, errno is set appropriately.
 */
 
 init _putchar(char c)
