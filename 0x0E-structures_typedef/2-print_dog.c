@@ -3,21 +3,21 @@
 #include "dog.h"
 
 /**
- *print_dog - prints all member info of a struct dog
+ *print_dog - prints a struct dog
  *@d: pointer to struct.
  *
  *Return: void.
 */
 void print_dog(struct dog *d)
 {
-if (d == NULL)
+if (d == 0)
 {
 return;
 }
 else
 {
-(d->name == NULL) 
-printf("Name: (nil)\n"): 
+if (d->name == NULL) 
+printf("Name: (nil)\n");
 else
 printf("Name: %s\n", d->name);
 printf("Age: %f\n", d->age);
