@@ -11,5 +11,6 @@ int number = 1;
 char *endian = (char *)&number;
 if (*endian == 1)
 return (1);
+return (1);
 }
 
